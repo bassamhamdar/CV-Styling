@@ -200,6 +200,8 @@ figure img{
     background-size: contain;    
     width: 110px;
     height: 110px;
+    background-repeat: no-repeat;
+
 
     }
 .contact-phone{
@@ -207,12 +209,16 @@ background-image: url('../images/phone.png');
 background-size: contain;
 width: 110px;
 height: 110px;
+background-repeat: no-repeat;
+
 }
 .contact-github{
     background-image: url('../images/github.png');
     background-size: contain;
     width: 110px;
     height: 110px;
+    background-repeat: no-repeat;
+    
     }
 
 .contact-facebook{
@@ -220,4 +226,97 @@ height: 110px;
     background-size: contain;
     width: 110px;
     height: 110px;
+    background-repeat: no-repeat;
+
+}
+
+
+ /* ---------------------------for mobile------------------------- */
+
+ 
+@media screen and (max-width:800px) {
+    figure{
+        display: none;
+    }
+
+    body{
+        margin: 2rem 1rem 1rem 1rem ;
+    };
+
+    #about {
+        width: 100%;
+    }
+    
+    #about p{
+        width: 100%;
+    }
+    #competencies {
+        display: flex;
+        flex-direction: column;
+    }
+    #competencies h3{
+        width: 150px;
+        border-bottom: 2px solid gray;
+
+    }
+    .skills-primary{
+        margin-top: 1rem;
+    }
+    .skills{
+        border-left: 0;
+        padding: 0;
+    }
+    .skill{
+        margin-top: 1 rem;
+    }
+
+    #experiences{
+        display: flex;
+        flex-direction: column;
+    }
+    .experience{
+        border-left: 0;
+        padding-left: 0;
+    }
+    #experiences h3{
+        border-bottom: 2px solid gray;
+        width: 150px;
+    }
+
+    #experiences h4{
+        margin-top: 1rem;
+    }
+    .experience-details{
+        margin-top: 1rem;
+        right:2rem;
+    }
+    #education{
+        display : flex;
+        flex-direction: column;
+        margin-bottom:50px;
+    }
+    #education h3{
+        border-bottom: 2px solid gray;
+        width: 150px;
+    }
+    #education h4{
+        margin-top: 1rem;
+    }
+    #hobbies{
+        display: flex;
+        flex-direction: column;
+    }
+    #hobbies h3{
+        border-bottom: 2px solid gray;
+        width: 150px;
+    }
+    #hobbies h4{
+        margin-top: 1rem;
+    }
+    #hobbies ul{
+        border-left: 0;
+        padding-top: 2rem;
+    }
+    
+
 }
